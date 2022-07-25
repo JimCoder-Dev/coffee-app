@@ -1,19 +1,25 @@
-
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView{
-            VStack{
-                List{
-                    Offer(title: "Early Coffee", description: "10% off. Offer valid from 6am to 9am.")
-                    Offer(title: "Welcome Gift", description: "25% off on your first order.")
+        TabView{
+            MenuPage()
+                .tabItem{
+                    Label("Menu", systemImage: "cup.and.saucer")
                 }
-                
-                .listRowSeparator(.hidden)
-            }
-            .navigationTitle("Offers")
+            OffersPage()
+                .tabItem{
+                    Label("Offers", systemImage: "tag")
+                }
+            MyOrderPage()
+                .tabItem{
+                    Label("Order", systemImage: "cart")
+                }
+            InfoPage()
+                .tabItem{
+                    Label("Info", systemImage: "info")
+                }
+            
         }
         
         
