@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F04E75D288FE5B7009BA85D /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04E75C288FE5B7009BA85D /* OrderItem.swift */; };
 		3F04E760288FEF85009BA85D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3F04E75F288FEF85009BA85D /* Alamofire */; };
+		3F04E763289037AE009BA85D /* LikesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04E762289037AE009BA85D /* LikesManager.swift */; };
+		3F04E7652890384C009BA85D /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04E7642890384C009BA85D /* LikeButton.swift */; };
 		3F2FC6B4288EC91100BDA1DC /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FC6B3288EC91100BDA1DC /* OffersPage.swift */; };
 		3F2FC6B9288ED45F00BDA1DC /* MyOrderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FC6B8288ED45F00BDA1DC /* MyOrderPage.swift */; };
 		3F2FC6BB288ED47D00BDA1DC /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FC6BA288ED47D00BDA1DC /* InfoPage.swift */; };
@@ -28,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		3F04E75C288FE5B7009BA85D /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		3F04E76128902C61009BA85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3F04E762289037AE009BA85D /* LikesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesManager.swift; sourceTree = "<group>"; };
+		3F04E7642890384C009BA85D /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		3F2FC6B3288EC91100BDA1DC /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 		3F2FC6B8288ED45F00BDA1DC /* MyOrderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderPage.swift; sourceTree = "<group>"; };
 		3F2FC6BA288ED47D00BDA1DC /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 				3F3BAE19288DC53F0056D9E7 /* Offer.swift */,
 				3F2FC6BE288EF02400BDA1DC /* ProductItem.swift */,
 				3F04E75C288FE5B7009BA85D /* OrderItem.swift */,
+				3F04E7642890384C009BA85D /* LikeButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +93,7 @@
 				3F2FC6C5288EF62300BDA1DC /* Product.swift */,
 				3F2FC6C7288EFB8800BDA1DC /* MenuManager.swift */,
 				3F2FC6C9288EFC0100BDA1DC /* CartManager.swift */,
+				3F04E762289037AE009BA85D /* LikesManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +117,7 @@
 		3F3BAE0A288DA2520056D9E7 /* CoffeeMasters */ = {
 			isa = PBXGroup;
 			children = (
+				3F04E76128902C61009BA85D /* Info.plist */,
 				3F2FC6C2288EF60A00BDA1DC /* Model */,
 				3F2FC6B6288ED41800BDA1DC /* Views */,
 				3F2FC6B5288ED3FE00BDA1DC /* Page Views */,
@@ -217,7 +225,9 @@
 				3F04E75D288FE5B7009BA85D /* OrderItem.swift in Sources */,
 				3F2FC6BF288EF02400BDA1DC /* ProductItem.swift in Sources */,
 				3F2FC6BD288ED48900BDA1DC /* MenuPage.swift in Sources */,
+				3F04E7652890384C009BA85D /* LikeButton.swift in Sources */,
 				3F3BAE0E288DA2520056D9E7 /* ContentView.swift in Sources */,
+				3F04E763289037AE009BA85D /* LikesManager.swift in Sources */,
 				3F3BAE0C288DA2520056D9E7 /* CoffeeMastersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,9 +360,9 @@
 				DEVELOPMENT_TEAM = A38BY3M22P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeMasters/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -379,9 +389,9 @@
 				DEVELOPMENT_TEAM = A38BY3M22P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeMasters/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

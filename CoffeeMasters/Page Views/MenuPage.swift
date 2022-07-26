@@ -8,17 +8,15 @@ struct MenuPage: View {
         VStack {
             NavigationView {
                 List {
-                   
                         
                     ForEach(menuManager.menu) { category in
-                    
                         Text(category.name)
                             .listRowBackground(Color("Background"))
                             .foregroundColor(Color("Secondary"))
                             .padding()
                         ForEach(category.products){ product in
                             NavigationLink{
-                                DetailsPage()
+                                DetailsPage(product: product)
                             }label: {
                             
                                ProductItem(product: product)

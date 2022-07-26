@@ -10,9 +10,6 @@ struct ProductItem: View {
             AsyncImage(url: product.imageURL)
                 .frame(width: 300, height: 150)
                 .background(Color("AccentColor"))
-            
-            
-                  
                        
                     HStack {
                         VStack(alignment: .leading) {
@@ -24,6 +21,7 @@ struct ProductItem: View {
 
                         }.padding(8)
                         Spacer()
+                        LikeButton(product: product)
                     }
                 }
                 .background(Color("SurfaceBackground"))

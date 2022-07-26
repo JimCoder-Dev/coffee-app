@@ -23,7 +23,7 @@ struct MyOrderPage: View {
                 List{
                     Section("ITEMS"){
                         ForEach(cartManager.products, id: \.0.id){ item in
-                            OrderItem()
+                            OrderItem(item: item)
                         }
                     }.listRowBackground(Color("Background"))
                 
@@ -71,9 +71,9 @@ struct MyOrderPage: View {
                 .navigationTitle("Your Order")
                 .alert("Order", isPresented: $orderConfirmed, actions: {
                                     Button("OK", role: .cancel) {
-                                        //TODO: send order
+                                        
                                         orderConfirmed = false
-                                        //cartManager.clear()
+                                        cartManager.clear()
                                     }
                                 }, message: {
                                     Text("Your order is being prepared.")
