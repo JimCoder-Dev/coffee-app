@@ -1,29 +1,36 @@
 import SwiftUI
 
 struct MenuPage: View {
+    
+    @EnvironmentObject var menuManager: MenuManager
+    
     var body: some View {
         VStack {
             NavigationView {
                 List {
                    
                         
-                    ForEach(1..<3) { category in
-                        Text("HOT COFFEE")
+                    ForEach(menuManager.menu) { category in
+                    
+                        Text(category.name)
                             .listRowBackground(Color("Background"))
                             .foregroundColor(Color("Secondary"))
                             .padding()
-                    
-                        ForEach(1 ..< 5) { item in
+                        ForEach(category.products){ product in
                             NavigationLink{
                                 DetailsPage()
                             }label: {
-                                ProductItem(product: Product(id: 1, name: "Product 1", description: "Products", price: 1.25, image: ""))
+                            
+                               ProductItem(product: product)
                                     .padding(.top)
                                     .padding(.leading)
                                     .padding(.bottom, 12)
                             }
                             
-                            }
+                        }
+                           
+                            
+                          
                             
                         }
                     }
@@ -43,5 +50,6 @@ struct MenuPage: View {
 struct MenuPage_Previews: PreviewProvider {
     static var previews: some View {
         MenuPage()
+            .environmentObject(MenuManager())
     }
 }

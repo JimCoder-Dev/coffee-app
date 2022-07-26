@@ -1,7 +1,7 @@
 import Foundation
 
-class CartManager {
-    var products: [(Product, Int)] = []
+class CartManager: ObservableObject {
+    @Published var products: [(Product, Int)] = []
         
     func add(product: Product, quantity: Int) {
         products.append((product, quantity))

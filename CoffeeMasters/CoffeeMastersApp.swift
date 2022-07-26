@@ -5,6 +5,7 @@ struct CoffeeMastersApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+              
         }
     }
 }

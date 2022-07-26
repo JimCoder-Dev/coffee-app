@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F04E75D288FE5B7009BA85D /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F04E75C288FE5B7009BA85D /* OrderItem.swift */; };
+		3F04E760288FEF85009BA85D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3F04E75F288FEF85009BA85D /* Alamofire */; };
 		3F2FC6B4288EC91100BDA1DC /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FC6B3288EC91100BDA1DC /* OffersPage.swift */; };
 		3F2FC6B9288ED45F00BDA1DC /* MyOrderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FC6B8288ED45F00BDA1DC /* MyOrderPage.swift */; };
 		3F2FC6BB288ED47D00BDA1DC /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FC6BA288ED47D00BDA1DC /* InfoPage.swift */; };
@@ -25,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F04E75C288FE5B7009BA85D /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		3F2FC6B3288EC91100BDA1DC /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 		3F2FC6B8288ED45F00BDA1DC /* MyOrderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderPage.swift; sourceTree = "<group>"; };
 		3F2FC6BA288ED47D00BDA1DC /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F04E760288FEF85009BA85D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,7 @@
 			children = (
 				3F3BAE19288DC53F0056D9E7 /* Offer.swift */,
 				3F2FC6BE288EF02400BDA1DC /* ProductItem.swift */,
+				3F04E75C288FE5B7009BA85D /* OrderItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +145,9 @@
 			dependencies = (
 			);
 			name = CoffeeMasters;
+			packageProductDependencies = (
+				3F04E75F288FEF85009BA85D /* Alamofire */,
+			);
 			productName = CoffeeMasters;
 			productReference = 3F3BAE08288DA2520056D9E7 /* CoffeeMasters.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 3F3BADFF288DA2520056D9E7;
+			packageReferences = (
+				3F04E75E288FEF85009BA85D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3F3BAE09288DA2520056D9E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,6 +214,7 @@
 				3F2FC6C1288EF21100BDA1DC /* DetailsPage.swift in Sources */,
 				3F2FC6C6288EF62300BDA1DC /* Product.swift in Sources */,
 				3F2FC6B9288ED45F00BDA1DC /* MyOrderPage.swift in Sources */,
+				3F04E75D288FE5B7009BA85D /* OrderItem.swift in Sources */,
 				3F2FC6BF288EF02400BDA1DC /* ProductItem.swift in Sources */,
 				3F2FC6BD288ED48900BDA1DC /* MenuPage.swift in Sources */,
 				3F3BAE0E288DA2520056D9E7 /* ContentView.swift in Sources */,
@@ -407,6 +419,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F04E75E288FEF85009BA85D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F04E75F288FEF85009BA85D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F04E75E288FEF85009BA85D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F3BAE00288DA2520056D9E7 /* Project object */;
 }
